@@ -4,7 +4,7 @@ import Newsitem from './Component/Newsitem'
 import LoadingBar from 'react-top-loading-bar'
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
