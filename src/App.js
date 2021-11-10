@@ -4,7 +4,7 @@ import Newsitem from './Component/Newsitem'
 import LoadingBar from 'react-top-loading-bar'
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -18,7 +18,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Router basename='/'>
+        <Router basename={process.env.PUBLIC_URL}>
           <LoadingBar
             color='#f11946'
             progress={this.state.progress}
