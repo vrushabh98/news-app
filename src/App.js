@@ -26,13 +26,13 @@ export default class App extends Component {
           />
           <Navbar />
           <Switch>
-            <Route exact path="/"><Newsitem setProgress={this.setProgress} key='general' category='general' pageSize={9} /></Route>
-            <Route exact path="/business"><Newsitem setProgress={this.setProgress} key='business' category='business' pageSize={9} /></Route>
-            <Route exact path="/sports"><Newsitem setProgress={this.setProgress} key='sports' category='sports' pageSize={9} /></Route>
-            <Route exact path="/entertainment"><Newsitem setProgress={this.setProgress} key='entertainment' category='entertainment' pageSize={9} /></Route>
-            <Route exact path="/health"><Newsitem setProgress={this.setProgress} key='health' category='health' pageSize={9} /></Route>
-            <Route exact path="/technology"><Newsitem setProgress={this.setProgress} key='technology' category='technology' pageSize={9} /></Route>
-            <Route exact path="/science"><Newsitem setProgress={this.setProgress} key='science' category='science' pageSize={9} /></Route>
+            <Route exact path="#/"><Newsitem setProgress={this.setProgress} key='general' category='general' pageSize={9} /></Route>
+            <Route exact path="#/business"><Newsitem setProgress={this.setProgress} key='business' category='business' pageSize={9} /></Route>
+            <Route exact path="#/sports"><Newsitem setProgress={this.setProgress} key='sports' category='sports' pageSize={9} /></Route>
+            <Route exact path="#/entertainment"><Newsitem setProgress={this.setProgress} key='entertainment' category='entertainment' pageSize={9} /></Route>
+            <Route exact path="#/health"><Newsitem setProgress={this.setProgress} key='health' category='health' pageSize={9} /></Route>
+            <Route exact path="#/technology"><Newsitem setProgress={this.setProgress} key='technology' category='technology' pageSize={9} /></Route>
+            <Route exact path="#/science"><Newsitem setProgress={this.setProgress} key='science' category='science' pageSize={9} /></Route>
           </Switch>
         </Router>
       </div>
